@@ -1,0 +1,44 @@
+{
+  brands: [
+    {
+      name: "Ubiquiti",
+      models: [
+          {name: "EdgeRouter Lite", code: "ERLite-3", desc: "Enterprise grade router to support 500 users", url: "/setup/install-or-update/?brand=Ubiquiti&model=EdgeRouter-Lite"
+          }
+      ]
+    },
+    {
+      name: "TP Link",
+      models: [
+            {name: "1043ND", code: "TL-WR1043ND", desc: "Long range router. Can handle 30-50 users",
+	            make: [
+                    { name: "v3",
+                       code: "version 3", desc: "Routers bought after 2015 are v3" 
+                    },  
+                    { name: "v2",
+                      code: "version 2", desc: "Routers bought before 2015 are v2" 
+                    }   
+               ]                 
+             },
+            {name: "841N", code: "TL-WR841N", desc: "Double antenna router, good for 10-15 users",
+              make: [
+                    { name: "v11",
+                       code: "version 11", desc: "Routers bought after 2015 are v3" 
+                    },  
+                    { name: "v10",
+                      code: "version 10", desc: "Routers bought before 2015 are v2" 
+                    }   
+               ]   
+	          },
+            {name: "740N", code: "TL-WR740N", desc: "Cheapest Openwrt supported router",
+              make: [
+                    { name: "v5",
+                       code: "version 5", desc: "Routers bought after 2015 are v3" 
+                    }   
+              ] 
+	          }     
+        ]
+    }
+  ]
+}
+

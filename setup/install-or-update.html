@@ -1,0 +1,47 @@
+---
+title: Step 1 - Select router model
+permalink: /setup/install-or-update/
+layout: setup
+---
+<script>
+  $('h2').html('Step 4. Install or Update ?')
+  $('.normalheader li:nth-child(4)').addClass("text-success")
+  $(document).ready(function(){
+    var url = "/setup/"+getUrlVar('brand').replace(' ','-')+"/?brand="+getUrlVar('brand')+"&model="+getUrlVar('model')+"&make="+getUrlVar('make')
+    $("#install-instructions").attr("href", url+"&mode=install")
+    $("#update-instructions").attr("href",url+"&mode=update")
+  })
+</script>
+    <a class="list-group-item active" href="" style="margin-bottom:20px">
+       <h5 class="list-group-item-heading">Router model selected <span class="text-success"><script>document.write(getUrlVar('brand')+" "+getUrlVar('model'))</script></span> with hardware version <span class="text-success"><script>document.write(getUrlVar('make'))</script></span></h5>
+    </a>
+     
+     <div class="row">
+         <div class="col-md-6">
+           <a id="install-instructions">
+             <div class="hpanel">
+                 <div class="panel-body text-center">
+                    <i class="fa fa-5x pe-7s-check" style="font-size:300px" ></i>
+                     <div class="m-t-sm">
+                         <button class="btn btn-success btn-sm">First time install</button>
+                         <p class="small">Select this option if you have <b>never tweaked with your router OS before</b>.</p>
+                     </div>
+                 </div>
+             </div>
+           </a>
+        </div>
+        <div class="col-md-6">
+           <a id="update-instructions">
+             <div class="hpanel">
+                 <div class="panel-body text-center">
+                    <i class="fa fa-5x pe-7s-refresh" style="font-size:300px" ></i>
+                     <div class="m-t-sm">
+                         <button class="btn btn-success btn-sm">Upgrade</button>
+                         <p class="small">Select this option if you have earlier installed Griggi before & now want to update it to latest version.</p>
+                     </div>
+                 </div>
+             </div>
+           </a>
+        </div>
+ 
+     </div>
